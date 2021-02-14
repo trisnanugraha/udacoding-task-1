@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- font style from google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <title>Task 1 - Web Basic</title>
+</head>
+
+<body class="bg-color">
+    <div class="box-form">
+
+        <h1>EVENT REGISTRATION FORM</h1>
+
+        <!-- form -->
+        <form action="#" method="POST">
+            
+            <!-- input field for fullname -->
+            <div class="label-field">
+                <label for="fullname" id="fullname">Name</label>
+            </div>
+            <div class="field-group fullname">
+                <div class="field">
+                    <input class="input-field" type="text" name="fullname" id="firstname" placeholder="John" required />
+                    <br />
+                    <label for="firstname">First Name</label>
+                </div>
+                <div class="field">
+                    <input class="input-field" type="text" name="fullname" id="lastname" placeholder="Doe" />
+                    <br />
+                    <label for="lastname" class="label-left">Last Name</label>
+                </div>
+            </div>
+
+            <br />
+
+            <!-- input field for company -->
+            <div class="label-field">
+                <label for="company">Company</label>
+            </div>
+            <div class="field-group">
+                <input class="input-field" type="text" name="company" id="company" placeholder="XYZ Corp" />
+            </div>
+
+
+            <br />
+
+            <!-- input field for email -->
+            <div class="label-field">
+                <label for="email">Email</label>
+            </div>
+            <div class="field-group">
+                <input class="input-field email" type="email" name="email" id="email" placeholder="johndoe@example.com"
+                    required />
+            </div>
+
+            <br />
+
+            <!-- input field for phonenumber -->
+            <div class="label-field">
+                <label for="phone" id="phone">Phone</label>
+            </div>
+            <div class="field-group phone">
+                <div class="field">
+                    <input class="input-field" type="text" name="phone" id="areacode" placeholder="+62"
+                        required />
+                    <br />
+                    <label for="areacode">Area Code</label>
+                </div>
+                <div class="field">
+                    <input class="input-field" type="text" name="phone" id="phonenumber"
+                        placeholder="8123456789" required />
+                    <br />
+                    <label for="phonenumber">Phone Number</label>
+                </div>
+            </div>
+
+            <br />
+
+            <!-- select field for subject -->
+            <div class="label-field">
+                <label for="subject">Subject</label>
+            </div>
+            <div class="field-group">
+                <select class="input-field" name="subject" id="subject" required>
+                    <option disabled selected>Choose Option</option>
+                    <option value="Student">Student</option>
+                    <option value="Worker">Worker</option>
+                    <option value="Teacher">Teacher</option>
+                </select>
+            </div>
+
+            <br />
+
+            <!-- radio field for checking customer -->
+            <div class="label-field check-customer">
+                <label for="check-customer">Are you an existing customer?</label>
+            </div>
+            <div>
+                <input type="radio" name="check-customer" id="check-yes" value="yes" required />
+                <label class="radio-label" for="check-yes">Yes</label>
+                <input type="radio" name="check-customer" id="check-no" value="no" required />
+                <label for="check-no">No</label>
+            </div>
+
+            <br>
+
+            <!-- button -->
+            <div class="btn">
+                <button class="btn-submit" type="submit">REGISTER</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
+<!-- by Trisna Nugraha - Web Mentoring Batch 4 Udacoding -->

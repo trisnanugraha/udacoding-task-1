@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.bg-color {
+    background-image: linear-gradient(to right top, #00e2f4, #00d5fb, #00c8ff, #00b9ff, #00a9ff, #3d9cf8, #5a8fef, #6f81e3, #8575d0, #9269bd, #9a5ea8, #9d5594);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.box-form {
+  background-color: #ffffff;
+  width: 700px;
+  height: 680px;
+  /* membuat form box di tengah tengah */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* end */
+  border-radius: 10px;
+}
+
+.box-form h1 {
+  text-align: center;
+  font-size: 24px;
+  background-color: #414756;
+  color: #f6f9ff;
+  margin: 0;
+  padding: 12px 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.box-form form {
+  margin: 30px 60px;
+}
+
+.label-field {
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.label-field #fullname, .label-field #phone {
+  position: relative;
+  top: -25px;
+}
+
+.field {
+  display: inline-block;
+}
+
+.field-group {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.field-group.phone label,.field-group.fullname label {
+    color: #A5ABBD;
+    font-size: 13px;
+}
+
+.input-field {
+  width: auto;
+  height: 40px;
+  text-indent: 15px;
+}
+
+.input-field#firstname {
+  width: 100%;
+}
+
+.input-field#lastname, .label-left {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.input-field#company, .input-field#email, .input-field#subject {
+  width: 440px;
+  display: inline-block;
+}
+
+.input-field#phonenumber {
+  width: 330px;
+  display: inline-block;
+}
+
+.input-field#areacode {
+  width: 80px;
+  margin-right: 20px;
+}
+
+input,
+select {
+  border: none;
+  background-color: #f6f9ff;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* menghilangkan outline */
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn-submit {
+  padding: 15px 35px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  background-color: #2dc194;
+  color: #ffffff;
+}
+
+/* memberikan efek hover pada button */
+.btn-submit:hover {
+  cursor: pointer;
+  background-color: #008a61;
+}
+
+.label-field.check-customer {
+  width: 300px;
+}
+
+.radio-label {
+  margin-right: 40px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+
+  .bg-color {
+    height: 115vh;
+  }
+
+  .box-form {
+    margin-top: 50px;
+    width: 450px;
+    height: 800px;
+  }
+
+  .label-field {
+    margin-right: 10px;
+  }
+
+  .label-field #fullname, .label-field #phone {
+    position: relative;
+    top: 0px;
+  }
+
+  .input-field#firstname, .input-field#lastname {
+    width: 140px;
+  }
+
+  .input-field#lastname {
+    width: 150px;
+  }
+
+  .input-field#company, .input-field#email, .input-field#subject {
+    width: 320px;
+  }
+
+  .input-field#areacode {
+    width: 60px;
+  }
+
+  .input-field#phonenumber {
+    width: 230px;
+  }
+}
